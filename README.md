@@ -1,2 +1,3 @@
 Emotion-o-Meter is a web-based movie recommendation companion that helps users understand the emotional tone of a movie before watching it. Inspired by my passion for movies and pixel art aesthetics, this project was created to help users determine whether a movie aligns with their current mood. By searching for a movie title, users can instantly discover the dominant emotional sentiment associated with the film, making it easier to choose movies that match what they want to feel at that moment. The application features a retro pixel-art interface built using HTML, CSS, and JavaScript, combining functionality with a playful visual experience.
+
 Colab Notebook link: https://colab.research.google.com/drive/1JHNtAuBWrGyLpwCCs5kn6N8zvCj86HxB?usp=sharing
