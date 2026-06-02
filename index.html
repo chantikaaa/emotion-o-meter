@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Movie Emotion Detector" />
+    <meta name="author" content="chantikaaa" />
+    <title>Emotion-o-Meter</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/papaparse@5/papaparse.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="bg">
+      <!-- Title -->
+      <div class="bg-window">
+        <div class="title">
+          <img src="assets/logo-head.png" class="logo" />
+        </div>
+        <!-- Layout: kiri + kanan -->
+        <div class="main-layout">
+          <!-- Col Kiri -->
+          <div class="left-col">
+            <div class="window-input">
+              <img src="assets/Input square.png" class="panel-bg" />
+              <div class="content">
+                <p>How will I feel about this movie?</p>
+                <div class="input-row">
+                  <input
+                    type="text"
+                    class="nes-input"
+                    placeholder="movie title..."
+                  />
+                  <button class="nes-btn is-success">ANALYZE</button>
+                </div>
+              </div>
+            </div>
+            <div class="window-result">
+              <img src="assets/Result Square.png" class="result-bg" />
+              <div class="result-content">
+                <p class="result-title">Result</p>
+                <div class="result-with-icon">
+                  <img src="assets/popcorn.png" class="popcorn-icon" />
+                  <p class="result-text">Movie Result Here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col Kanan -->
+          <div class="right-col">
+            <!-- Star rating -->
+            <div class="star-area">
+              <span class="rating-num">0.0</span>
+              <img src="assets/star.png" class="star-img" />
+            </div>
+            <!-- Speech bubble -->
+            <div class="bubble-capy">
+              <div class="nes-balloon from-left speech">
+                <p class="mood-label" id="mood-label">This is a/an ... movie</p>
+                <p class="also-feels" id="also-feels"></p>
+              </div>
+              <!-- Window: capybara -->
+              <div class="window-capy">
+                <img src="assets/gif-capy.gif" class="capy-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
